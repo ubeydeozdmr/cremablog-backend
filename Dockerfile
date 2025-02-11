@@ -15,7 +15,7 @@ WORKDIR /app
 
 COPY --from=builder /app /app
 
-COPY .env.production /app/.env
+COPY .env /app/.env
 
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
